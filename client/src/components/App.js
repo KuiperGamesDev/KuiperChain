@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.svg';
 
 class App extends Component {
     state = { walletInfo: {} };
@@ -19,6 +19,10 @@ class App extends Component {
                <div>
                 KP-CHAIN STAY HIGH
                </div>
+               <br></br>
+               <div id="Rahul">
+                Developed By Rahul
+               </div>
                <br />
                <div><Link to='/blocks'>Blocks</Link></div>
                <br />
@@ -28,6 +32,7 @@ class App extends Component {
                <br />
                <div className='WalletInfo'>
                <div>Address: {address}</div>
+               <br></br>
                <div>Balance: {balance}</div>
                </div>
             </div>
